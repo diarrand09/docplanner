@@ -1,0 +1,325 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+   
+}
+
+/*l'en-tête */
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 15px;
+   
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+/* conteneur principal */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+/*la barre de navigation */
+.navbar{
+    display: flex;
+    position: relative;
+
+}
+.navbar li{
+    list-style: none;
+    margin-right: 70px;
+     
+}
+.navbar a{
+ 
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+     color:darkgray;
+}
+span{
+    color:#5dc6b0;
+}
+.doc{
+    color:darkgray;
+    margin-left: 70px;
+  
+}
+ .docplanner a{
+    color:#5dc6b0;
+
+}
+/* survol liens de navigation */
+header .navbar li a:hover{
+    color:#5dc6b0;
+}
+/*pour tous les sections*/
+section {
+    margin-bottom: 40px; 
+    padding: 40px;
+}
+.sect1{
+    display: flex;
+    word-spacing: 8px;
+    color:lightslategray;
+    
+    
+}
+
+.class{
+    text-align: center;
+    font-weight:100;
+}
+.class p{
+    font-size: 30px;
+    color:#5dc6b0;
+}
+/* Styles pour les 3 box*/
+.patient{
+    background-color: #5dc6b0;
+    padding: 60px;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: larger;
+    width: 320px;
+    height: 280px;
+    
+}
+.medecin{
+     background-color:dodgerblue;
+    padding: 60px;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: larger;
+    width: 320px;
+    height: 280px;
+
+    
+}
+
+.clinique{
+      background-color:midnightblue;
+    padding: 60px;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: larger;
+    width: 320px;
+    height: 280px;
+}
+.les3{
+    display: flex;
+    
+}
+/*la liste déroulante dans la section */
+section select{
+    border: none;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.sect2{
+    display: flex;
+}
+.sect2 p{
+    font-size: 30px;
+    color:  #5dc6b0;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons img {
+    width: 100px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+    margin: 10px; 
+}
+
+.icons img:hover {
+    filter: grayscale(0%); 
+}
+.worldwide-platform {
+    background-color:#dffaf6; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 0;
+    padding: 50px 10%;
+}
+.worldwide-platform h1 {
+    color:  #5dc6b0;
+}
+.worldwide-platform h2 {
+    color:  #5dc6b0;
+}
+
+.platform-content {
+    width: 66.66%; 
+    margin-right: 20px;
+}
+
+
+.platform-content h2 {
+    
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.platform-content p {
+    font-size: 16px;
+}
+
+.platform-stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.33%; 
+    gap: 15px;
+    margin-right: 20px; 
+}
+
+.stats-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+.stats-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.stats-box p {
+    font-size: 16px;
+}
+.impact-section {
+    background-color: #ffffff; 
+    padding: 50px 10%; 
+    margin: 20px 0 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    height: 50vh; 
+}
+
+.impact-content {
+    max-width: 800px; 
+}
+
+.impact-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5dc6b0;
+}
+
+.impact-content p {
+    font-size: 16px;
+}
+/*style de chaque bas d'image*/
+.lona{
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+.lona h3{
+    margin-right: 70px;
+}
+/*style du bouton*/
+.lona button{
+    background-color: cornflowerblue;
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px; 
+
+}
+/*style pour la grille*/
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px;
+    grid-row-gap: 30px;
+
+}
+.items img{
+    border-radius: 5px;
+}
+
+.lona:hover{
+    background-color:#eef8f7;
+  }
+  /*la derniére section*/
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+.last button{
+    background-color:  cornflowerblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px; 
+ }
+ /*style du pied de page*/
+footer{
+   
+    text-align:center;
+ }
+.footer{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+.footer a{
+    margin: 5px;
+    text-decoration: none;
+  }
+.footer a:hover{
+   color:cornflowerblue
+   }
+   /*pour un peu d'ajustement*/
+body {
+    margin: 40px; 
+}
+
+
+
+
+
+
+
+
+
+
